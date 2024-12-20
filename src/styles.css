@@ -1,6 +1,8 @@
 :root{
   --button-color-orange: rgb(255, 156, 0);
   --content-width: 70%;
+  --card-bg-clr: rgba(15, 15, 15, 0.7);
+  --card-box-shadow: 0px 0px 3px 1px rgba(255, 156, 0, 0.75);
 }
 
 *{
@@ -64,3 +66,28 @@ body{
   width: var(--content-width);
   margin: 125px auto;
 }
+
+/* HOME PAGE STYLE */
+#content .card.home{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 60px;
+  color: white;
+  /* background-color: rgba(10, 10, 10, 0.5); */
+  padding: 40px 0;
+  /* border-radius: 10px; */
+}
+
+.card.home .left h1{
+  font-size: 2.8rem;
+}
+
+.card.home p{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  max-inline-size: 70ch;
+}
+ 

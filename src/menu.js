@@ -27,20 +27,17 @@ const page = 'menu';
 const foodMenu = [
   new MenuCard(
     'English Breakfast',
-    `A hearty and traditional British breakfast, 
-    featuring a full cooked breakfast with bacon, 
-    sausages, eggs (fried, scrambled or poached), 
-    baked beans, grilled tomatoes, mushrooms, and toast.`,
+    `A hearty and satisfying meal featuring Sausages,
+    Bacon, Eggs, Baked beans, Grilled tomatoes, 
+    Mushrooms and Toast`,
     englishBreakfastImage,
     '$ 10',
     page
   ),
   new MenuCard(
     'Chicken Porridge',
-    `Chicken porridge, a comforting Indonesian breakfast
-    dish. Savory rice porridge topped with shredded 
-    chicken, scallions, crispy shallots, and served 
-    with various condiments.`,
+    `A nostalgic bowl of Indonesian home-style 
+    chicken porridge, perfect for a cozy meal.`,
     buburAyamImage,
     '$ 5',
     page
@@ -49,8 +46,7 @@ const foodMenu = [
     'Rolled Omelette',
     `Classic Rolled Omelette A hearty omelette, 
     delicately rolled and served with your choice of 
-    filling. Popular choices include cheese, ham, and 
-    vegetables.`,
+    filling.`,
     rolledOmeletteImage,
     '$ 4',
     page

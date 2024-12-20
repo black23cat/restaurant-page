@@ -1,0 +1,41 @@
+.container-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card.menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  color: white;
+  position: relative;
+  margin: 30px 15px;
+  padding: 40px 50px;
+
+  background-color: var(--card-bg-clr, red);
+  border-radius: 10px;
+  box-shadow: var(--card-box-shadow);
+}
+
+.paragraph-container {
+  margin-bottom: 35px;
+}
+
+.paragraph-container > h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.paragraph-container > p {
+  font-size: 1.2rem;
+}
+
+.card-image-container img {
+  border-radius: 60px;
+}
+
+.price {
+  position: absolute;
+  left: 55px;
+  bottom: 30px;
+}
