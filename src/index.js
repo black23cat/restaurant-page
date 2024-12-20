@@ -1,6 +1,8 @@
 import "./styles.css";
+import "./home.css"
 import { homePage } from "./home.js";
 import { menuPage } from "./menu.js";
+import { contactPage } from "./contact.js";
 
 const screenDisplay = function (){
   const buttons = document.querySelectorAll('nav button');
@@ -20,7 +22,8 @@ const screenDisplay = function (){
         content.appendChild(menuPage());
         break;
       case 'contact':
-        alert(`You click ${e.target.classList.value}`);
+        content.textContent = '';
+        content.appendChild(contactPage());
         break;
     }
   }
