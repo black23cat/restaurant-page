@@ -1,4 +1,5 @@
 import "./styles.css";
+import { homePage } from "./home.js";
 
 const screenDisplay = function (){
   const buttons = document.querySelectorAll('nav button');
@@ -10,7 +11,8 @@ const screenDisplay = function (){
     const content = document.getElementById('content');
     switch(e.target.classList.value){
       case 'home':
-        alert(`You click ${e.target.classList.value}`);
+        content.textContent = '';
+        content.appendChild(homePage());
         break;
       case 'menu':
         alert(`You click ${e.target.classList.value}`);
@@ -22,4 +24,6 @@ const screenDisplay = function (){
   }
 
   // Initial page load
+  content.textContent = '';
+  content.appendChild(homePage());
 }();

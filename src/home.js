@@ -32,3 +32,27 @@ class Card{
     return card;
   }
 }
+
+const homePage = function(){
+  const container = document.createElement('div');
+  container.classList.add('container-home');
+  container.appendChild(homeCard.generateCardNode('500px'));
+
+  return container;
+}
+
+const homeCard = new Card(
+  'Enjoy Our Delicious Breakfast',
+  `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Mauris bibendum ut justo at mollis. Integer eleifend nunc vitae urna 
+  pulvinar maximus. Suspendisse est nibh, tempor ut hendrerit quis, varius 
+  vitae elit. Ut purus dolor, vulputate vel eros suscipit, gravida ullamcorper
+  lacus. Ut finibus tellus sit amet fringilla iaculis. In et ultrices sapien. 
+  Cras suscipit interdum tempus. Sed interdum euismod est, at mollis erat 
+  faucibus in. Nulla leo elit, interdum a venenatis vel, ullamcorper et 
+  purus. Nam at vehicula elit.`,
+  englishBrakfastImage,
+  'home'
+);
+
+export { homePage, Card };
