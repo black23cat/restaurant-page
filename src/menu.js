@@ -16,7 +16,7 @@ class MenuCard extends Card {
     const cardMenu = this.generateCardNode('200px');
     const priceDiv = document.createElement('div');
     priceDiv.classList.add('price');
-    priceDiv.textContent = this.price;
+    priceDiv.textContent = `Price : ${this.price}`;
     cardMenu.appendChild(priceDiv);
 
     return cardMenu;
@@ -86,9 +86,12 @@ const drinksMenu = [
 
 const menuPage = function (){
   const container = document.createElement('div');
+  const menuHeader = document.createElement('h1');
   const foodMenuContainer = document.createElement('div');
   const drinkMenuContainer = document.createElement('div');
   container.classList.add(`container-${page}`);
+  menuHeader.classList.add('menu-header');
+  menuHeader.textContent = 'Restaurant Menu';
   foodMenuContainer.classList.add('food-menu-container');
   drinkMenuContainer.classList.add('drink-menu-container');
   foodMenu.forEach(function(menu) {
@@ -97,6 +100,7 @@ const menuPage = function (){
   drinksMenu.forEach(function(menu) {
     drinkMenuContainer.appendChild(menu.generateMenuCardNode());
   });
+  container.appendChild(menuHeader);
   container.appendChild(foodMenuContainer);
   container.appendChild(drinkMenuContainer);
   
