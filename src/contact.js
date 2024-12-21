@@ -14,18 +14,6 @@ class ContactCard extends Card {
 const page = 'contact';
 const contact = [
   new ContactCard(
-    'Phone',
-    '+62 888 888 888',
-    phoneIcon,
-    page
-  ),
-  new ContactCard(
-    'Email',
-    'wkitchen@email.com',
-    emailIcon,
-    page
-  ),
-  new ContactCard(
     'Facebook',
     'w_kitchen',
     fbIcon,
@@ -43,13 +31,29 @@ const contact = [
     xIcon,
     page
   ),
+  new ContactCard(
+    'Phone',
+    '+62 888 888 888',
+    phoneIcon,
+    page
+  ),
+  new ContactCard(
+    'Email',
+    'wkitchen@email.com',
+    emailIcon,
+    page
+  ),
 ];
 
 const contactPage = function(){
   const container = document.createElement('div');
-  container.classList.add(`container-${page}`)
+  const contactHeader = document.createElement('h1');
+  contactHeader.classList.add('contact-header');
+  contactHeader.textContent = 'Contact Us';
+  container.classList.add(`container-${page}`);
+  container.appendChild(contactHeader);
   contact.forEach(function(card){
-    container.appendChild(card.generateCardNode('35px'));
+    container.appendChild(card.generateCardNode('60px'));
   });
   return container;
 }

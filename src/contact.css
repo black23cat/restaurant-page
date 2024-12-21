@@ -1,0 +1,27 @@
+.container-contact{
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  background-color: var(--card-bg-clr);
+  border-radius: 10px;
+}
+
+.contact-header{
+  padding: 40px;
+}
+
+.container-contact .card.contact{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding: 30px;
+}
+
+
+.card.contact .paragraph-container{
+  width: 200px;
+  margin-left: 20px;
+  text-align: left;
+}
