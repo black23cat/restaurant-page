@@ -77,7 +77,7 @@ const drinksMenu = [
   ),
   new MenuCard(
     'Iced Tea',
-    'Refreshingly cold brewed tea.',
+    'Iced Tea, delicately brewed and delightfully refreshing.',
     icedTeaImage,
     '$ 2',
     page

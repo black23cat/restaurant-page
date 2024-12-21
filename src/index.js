@@ -15,21 +15,34 @@ const screenDisplay = function (){
     const content = document.getElementById('content');
     switch(e.target.classList.value){
       case 'home':
+        resetActiveBtn();
         content.textContent = '';
         content.appendChild(homePage());
+        e.target.classList.add('active');
         break;
       case 'menu':
+        resetActiveBtn();
         content.textContent = '';
         content.appendChild(menuPage());
+        e.target.classList.add('active');
         break;
       case 'contact':
+        resetActiveBtn();
         content.textContent = '';
         content.appendChild(contactPage());
+        e.target.classList.add('active');
         break;
     }
+  }
+
+  function resetActiveBtn(){
+    buttons.forEach(button => {
+      button.classList.remove('active');
+    })
   }
 
   // Initial page load
   content.textContent = '';
   content.appendChild(homePage());
+  buttons[0].classList.add('active');
 }();
